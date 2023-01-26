@@ -1,0 +1,75 @@
+<div class="container">
+	<form (ngSubmit)="submit()" #forma="ngForm">
+		<h3>Cración de Estudiante - Formulario por template</h3>
+		<hr />
+		<label for="name"><b>Nombre</b></label>
+		<input
+            type="text"
+            #name="ngModel"
+            [(ngModel)]="student.name"
+            placeholder="Introduzca su nombre de pila"
+            name="name"
+            class="form-control"
+          />
+        <label for="surname"><b>Apellidos</b></label>
+        <input
+              type="text"
+              #name="ngModel"
+              [(ngModel)]="student.surname"
+              placeholder="Introduzca su apellido"
+              name="surname"
+              class="form-control"
+        />
+
+        <label for="poblacion"><b>Población</b></label>
+        <input
+              type="text"
+              #name="ngModel"
+              [(ngModel)]="student.poblacion"
+              placeholder="Introduzca su población"
+              name="poblacion"
+              class="form-control"
+        />
+
+        <label for="provincia"><b>Província</b></label>
+        <input
+              type="text"
+              #name="ngModel"
+              [(ngModel)]="student.provincia"
+              placeholder="Introduzca su província"
+              name="surname"
+              class="form-control"
+        />
+
+        <label for="birthday"><b>Fecha nacimiento</b></label>
+        <input
+            type="date"
+            #name="ngModel" 
+            [(ngModel)]="student.birthday"
+            placeholder="Introduzca fecha de nacimiento"
+            name="birthday"
+            class="form-control" 
+             />
+
+            
+         <label for="sex"><b>Sex</b></label>
+                  <div>
+                    <label class="radio-inline">
+                      <input type="radio" name="sex" value="male" [(ngModel)]="student.sex">
+                      Male
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="sex" value="female" [(ngModel)]="student.sex">
+                      Female
+                    </label>
+                  </div>
+                
+  
+		<br>
+		<div class="row">
+			<div class="col-lg">
+				<button type="submit" class="signup-btn">Submit</button>
+			</div>
+		</div>
+	</form>
+</div>
